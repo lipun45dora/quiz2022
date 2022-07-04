@@ -1,0 +1,155 @@
+<!DOCTYPE>
+  <html lang="en">
+   <head>
+     <title></title>
+   </head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+     <body style="background-color:lightblue;">
+	 <h1>How much you know about Lipun</h1>
+	 
+	 <br></br>
+	  <h1>1)What is my fav place</h1>
+	  a)<button onclick="wrong()">Sea beach</button>
+	  <br>
+	  </br>
+	  b)<button onclick="doing()">Hill sides</button>
+	  <br>
+	  </br>
+	   c)<button onclick="wrong()">Waterfall</button>
+	  <br>
+	  </br>
+ 	  <h1>2)What is my date of birth</h1>
+	  a)<button onclick="wrong()">16th sept</button>
+	  <br>
+	  </br>
+	  b)<button  onclick="doing()">1st sept</button>
+	   <br></br>
+	   <h1>3)What i love to eat the most</h1>
+	  a)<button onclick="wrong()">Pani puri</button>
+	  <br>
+	  </br>
+	  b)<button  onclick="wrong()">Dosa</button>
+	   <br>
+	  </br>
+	  c)<button  onclick="doing()">Chenaporh</button>
+	  <br></br>
+	   <h1>4)What i have</h1>
+	  a)<button onclick="wrong()">Bike</button>
+	  <br>
+	  </br>
+	  b)<button  onclick="wrong()">Car</button>
+	   <br>
+	  </br>
+	  c)<button  onclick="doing()">Scooty</button>
+	   <br></br>
+	   <h1>5)What i use the most</h1>
+	  a)<button onclick="wrong()">Instagram</button>
+	  <br>
+	  </br>
+	  b)<button  onclick="wrong()">Facebook</button>
+	   <br>
+	  </br>
+	  c)<button  onclick="doing()">Youtube</button>
+	    <br>
+	  </br>
+	  d)<button  onclick="wrong()">TikTok</button>
+	    <br>
+	  </br>
+	  <h1>6)I love to play</h1>
+	  a)<button onclick="wrong()">Football</button>
+	  <br>
+	  </br>
+	  b)<button  onclick="wrong()">Hockey</button>
+	   <br>
+	  </br>
+	  c)<button  onclick="doing()">Cricket</button>
+	    <br>
+	  </br>
+	  d)<button  onclick="wrong()">Pubg</button>
+	    <br>
+	    </br>
+		  <h1>7)I love to drink</h1>
+	  a)<button onclick="wrong()">Coffee</button>
+	  <br>
+	  </br>
+	  b)<button  onclick="wrong()">Tea</button>
+	   <br>
+	  </br>
+	  c)<button  onclick="wrong()">Juice</button>
+	    <br>
+	  </br>
+	  d)<button  onclick="doing()">Coldrinks</button>
+	    <br>
+	    </br>
+		  <h1>8)which is my fav ipl team</h1>
+	  a)<button onclick="wrong()">Csk</button>
+	  <br>
+	  </br>
+	  b)<button  onclick="wrong()">KKr</button>
+	   <br>
+	  </br>
+	  c)<button  onclick="wrong()">Rcb</button>
+	    <br>
+	  </br>
+	  d)<button  onclick="doing()">MI</button>
+             <br></br>
+       	    <button onclick="submit()" style="background-color:blue;">submit</button>
+       <Script>
+	   
+	   /* function doing()
+		{
+		// document.write(("correct 00answer").style.color='green';))
+		 //x.style.color='green';
+	      alert("correct answer");
+		  //document.getElementById("lipun").style.color='green';
+		}
+		function wrong()
+		{
+		 //var y=document.write("wrong answer")
+		 //y.style.color='red';
+		 alert("wrong answer");
+		}*/
+	     var count=0;
+    function doing()
+     {
+      count++;
+	 // alert(count);
+     }
+	 function submit()
+	 {
+	  if(count==1 || count==2 || count==3 )
+	  {
+	   document.write("Nice Try");
+	    document.write("<br/>");
+	   document.write("you have correct"+" "+count+" "+"out of"+" "+"8");
+	  }
+	  else if(count==4 || count==5)
+	  {
+	 document.write("Good!");
+	  document.write("<br/>");
+	   document.write("you have correct"+" "+count+" "+"out of"+" "+"8");
+	  }
+	  else if(count==6 || count==7)
+	  {
+	   document.write("Excellent!");
+	   document.write("<br/>");
+	   document.write("you have correct"+" "+count+" "+"out of"+" "+"8");
+	  }
+	  else if(count==8)
+	  {
+	   document.write("Well done!");
+	    document.write("<br/>");
+	   document.write("you know Lipun very well");
+	  }
+	  else if(count==0)
+	  {
+	   alert("Sry you don't know anything about lipun")
+	    <"/br">
+	   alert("Try again")
+	  }
+	 }
+		</Script>
+    </body>
+</html>
